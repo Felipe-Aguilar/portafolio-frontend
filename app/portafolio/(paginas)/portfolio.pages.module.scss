@@ -1,0 +1,131 @@
+.pagePortfolio{
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgba(242, 242, 242, .6);
+
+    h1, a, span, h2, h3{
+        color: #fff;
+    }
+
+    .Body{
+        width: 80%;
+        // background: red;
+
+
+        .btnReturn{
+            a{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                max-width: max-content;
+                background-color: rgba(255, 255, 255, 0.095);
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 100px;
+                border: 1px solid rgba(242, 242, 242, .04);
+                transition: all 0.3s ease;
+                svg{
+                    font-size: 30px;
+                }
+
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.171);
+                    
+                    svg{
+                        transition: transform 0.3s ease;
+                        transform: translateX(-5px);
+                    }
+                }
+
+                &:not(:hover){
+                    svg{
+                        transform: translateX(0);
+                        transition: transform 0.3s ease;
+                    }
+                }
+            }
+        }
+
+        .Title{
+            margin-top: 10px;
+            text-align: center;
+
+            h1{
+                font-size: 4rem;
+            }
+            span{
+                display: block;
+            }
+
+            img{
+                width: 70%;
+                height: auto;
+                margin-top: 20px;
+                border-radius:16px;
+                box-shadow:#000000 0px 40px 50px 10px;
+            }
+        }
+
+        .Description{
+            margin-top: 20px;
+            b{
+                text-decoration: underline;
+            }
+        }
+
+        .Technologies{
+            margin-top: 20px;
+            // text-align: center;
+
+            .Icons{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 20px;
+                svg{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .Cronogram{
+            margin-top: 20px;
+
+            span{
+                color: rgba(242, 242, 242, .6);
+            }
+
+            a{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                max-width: max-content;
+                padding: 10px 20px;
+                background-color: rgba(255, 255, 255, 0.095);
+                border-radius: 100px;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.171);
+                    
+                    svg{
+                        transition: transform 0.3s ease;
+                        transform: translateX(3px) translateY(-3px);
+                    }
+                }
+
+                &:not(:hover){
+                    svg{
+                        transform: translateX(0) translateY(0);
+                        transition: transform 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import style from './portafolio.module.scss';
+import style from '../portafolio/portafolio.module.scss';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import Image from 'next/image';
 
@@ -10,15 +10,14 @@ interface propsProyect {
     image: string
 }
 
-const PagePortafolio = () => {
+
+const PageProyectos = () => {
 
     const Proyectos: propsProyect[] = [
-        {name: 'Goza Mx', subTitle: 'Desarrollo de Ecommerce para venta de ropa de dama.', link: '/portafolio/goza-mx', image: '/imagenes/Goza.webp'},
-        {name: 'Yalogics', subTitle: 'Sitio web estático para empresa dedicada a desarrollos web en general', link: '/portafolio/yalogics', image: '/imagenes/Yalogics.webp'},
-        {name: 'Dkassa', subTitle: 'Ecommerce para venta de muebles en Monterrey, México', link: '/portafolio/dkassa', image: '/imagenes/Dkassa.webp'},
-        {name: 'South Dental', subTitle: 'Desarrollo de sitio web para una clínica especializada en odontología para toda la familia.', link: '/portafolio/south-dental', image: '/imagenes/South.webp'},
-        {name: 'Cigars & Luxury', subTitle: 'Ecommerce para venta de habanos en México', link: '/portafolio/cigars-luxury', image: '/imagenes/Cigars.webp'},
-        {name: 'Babel Traductores', subTitle: 'Desarrollo web con un diseño totalmente inusual. Servicios de Traducción de documentos, eventos y conferencias en Monterrey, México', link: '/portafolio/babel-traductores', image: '/imagenes/Babel.webp'},
+        {name: 'Reto CIID', subTitle: 'Mini proyecto de noticias con conexión a una REST API', link: '/reto-ciid', image: '/imagenes/RetoCIID.webp'},
+        {name: 'ERP Autos el Angel de Puebla', subTitle: 'Cascaron de ERP de compañía de Venta de Autos en Puebla.', link: '/erp-autos', image: '/imagenes/ErpAutos.webp'},
+        {name: 'Tierra App', subTitle: 'Proyecto con la finalidad de poner en práctica funcionalidades y animaciones en React', link: '/tierra-app', image: '/imagenes/TierraApp.webp'},
+        {name: 'Carrito App', subTitle: 'Proyecto con uso de Hooks y Librerías, principios de React', link: '/carrito-app', image: '/imagenes/CarritoApp.webp'}
     ]
 
     return ( 
@@ -56,4 +55,4 @@ const PagePortafolio = () => {
     );
 }
 
-export default PagePortafolio;
+export default PageProyectos;
