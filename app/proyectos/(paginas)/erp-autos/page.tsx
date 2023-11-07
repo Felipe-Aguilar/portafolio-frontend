@@ -1,41 +1,42 @@
 import Link from 'next/link';
-import style from '../portfolio.pages.module.scss';
+import style from '../../../portafolio/(paginas)/portfolio.pages.module.scss';
 import { BsArrowLeftShort, BsBoxArrowUpRight } from 'react-icons/bs';
-import { SiGoogle, SiGoogleanalytics, SiSemrush, SiWordpress } from "react-icons/si";
+import { SiJavascript, SiReact, SiSass, SiTypescript, SiVite } from "react-icons/si";
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'Felipe Aguilar - Babel Traductores',
-    description: 'Babel Traductores, desarrollo de ecommerce front-end por Felipe Aguilar',
+    title: 'Felipe Aguilar - ERP Autos',
+    description: 'ERP Autos, desarrollo de proyecto front-end por Felipe Aguilar',
 };
 
-const PageBabel = () => {
+const PageErp = () => {
 
     const technologies = [
-        {"icon": <SiWordpress />},
-        {"icon": <SiGoogleanalytics />},
-        {"icon": <SiSemrush />},
-        {"icon": <SiGoogle />},
+        {"icon": <SiJavascript />},
+        {"icon": <SiTypescript />},
+        {"icon": <SiReact />},
+        {"icon": <SiVite />},
+        {"icon": <SiSass />},
     ]
     return ( 
         <div className={style.pagePortfolio}>
             <div className={style.Body}>
 
                 <div className={style.btnReturn}>
-                    <Link href='/portafolio'>
+                    <Link href='/proyectos'>
                         <BsArrowLeftShort />
                         Regresar
                     </Link>
                 </div>
 
                 <div className={style.Title}>
-                    <h1>Babel Traductores</h1>
-                    <span>Sitio web</span>
+                    <h1>Autos el Angel</h1>
+                    <span>ERP</span>
                     <Image 
-                        src={'/imagenes/Babel.webp'}
+                        src={'/imagenes/ErpAutos.webp'}
                         width={1920}
                         height={1080}
-                        alt='Desarrollo front-end, sitio web estático South Dental Center'
+                        alt='Desarrollo front-end, proyecto ERP Autos'
                     />
                 </div>
 
@@ -43,13 +44,11 @@ const PageBabel = () => {
                     <div>
                         <h2>Descripción General</h2>
                         <p>
-                            <b>Babel traductores</b> traducciones para eventos y documentos en Monterrey, México.
+                            Maquetado de un ERP para <b>Autos el Angel de puebla</b>.
                         </p>
                         <br/>
                         <p>
-                            Un proyecto muy poco usual, con un diseño totalmente extravagante. El cliente solicitó un sitio web poco usual, dándonos diferentes conceptos e ideas y se optó por constuír este sitio con un <b>scroll de forma horizontal</b>, dando un resultado satisfactorio e impresionante.
-                            <br /><br />
-                            Además del desarrollo de este sitio web, se realizó su respectiva <b>optimización</b> y <b>SEO Técnico</b> para su posicionamiento en los motores de búsqueda.
+                            Proyecto realizado con <b>Vite (React)</b>, pensado para usar servicios web <b>API REST</b> para consumo e intercambio de información con el lado del servidor.
                         </p>
                     </div>
                 </div>
@@ -69,11 +68,11 @@ const PageBabel = () => {
                 <div className={style.Cronogram}>
                     <h3>Cronograma</h3>
                     <p>
-                        1 mes de desarrollo, 5 meses de SEO y SEO Técnico, <span>Lanzado en 2022</span>
+                        <span>Pausado</span>
                     </p>
 
-                    <a href="https://babeltraductores.com.mx/" target='_blank'>
-                        Visitar sitio 
+                    <a href="https://tek-robot-autos-angel.netlify.app/" target='_blank'>
+                        Visitar proyecto 
                         <BsBoxArrowUpRight />
                     </a>
                 </div>
@@ -82,4 +81,4 @@ const PageBabel = () => {
     );
 }
 
-export default PageBabel;
+export default PageErp;

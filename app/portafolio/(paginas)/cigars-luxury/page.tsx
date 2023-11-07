@@ -4,6 +4,10 @@ import { BsArrowLeftShort, BsBoxArrowUpRight } from 'react-icons/bs';
 import { SiBootstrap, SiElementor, SiWordpress } from "react-icons/si";
 import Image from 'next/image';
 
+export const metadata = {
+    title: 'Felipe Aguilar - Cigars & Luxury',
+    description: 'Cigars & Luxury, desarrollo de ecommerce front-end por Felipe Aguilar',
+};
 
 const PageCigars = () => {
 

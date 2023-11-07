@@ -1,40 +1,41 @@
 import Link from 'next/link';
-import style from '../portfolio.pages.module.scss';
+import style from '../../../portafolio/(paginas)/portfolio.pages.module.scss';
 import { BsArrowLeftShort, BsBoxArrowUpRight } from 'react-icons/bs';
-import { SiBootstrap, SiReact, SiSass } from "react-icons/si";
+import { SiBootstrap, SiJavascript, SiReact, SiStyledcomponents } from "react-icons/si";
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'Felipe Aguilar - Yalogics',
-    description: 'Yalogics, desarrollo de ecommerce front-end por Felipe Aguilar',
+    title: 'Felipe Aguilar - Carrito App',
+    description: 'Carrito App, desarrollo de proyecto front-end por Felipe Aguilar',
 };
 
-const PageYalogics = () => {
+const PageCarrito = () => {
 
     const technologies = [
+        {"icon": <SiJavascript />},
         {"icon": <SiReact />},
-        {"icon": <SiSass />},
-        {"icon": <SiBootstrap />}
+        {"icon": <SiStyledcomponents />},
+        {"icon": <SiBootstrap />},
     ]
     return ( 
         <div className={style.pagePortfolio}>
             <div className={style.Body}>
 
                 <div className={style.btnReturn}>
-                    <Link href='/portafolio'>
+                    <Link href='/proyectos'>
                         <BsArrowLeftShort />
                         Regresar
                     </Link>
                 </div>
 
                 <div className={style.Title}>
-                    <h1>Yalogics</h1>
-                    <span>Sitio Web</span>
+                    <h1>Carrito</h1>
+                    <span>Aplicación web</span>
                     <Image 
-                        src={'/imagenes/Yalogics.webp'}
+                        src={'/imagenes/CarritoApp.webp'}
                         width={1920}
                         height={1080}
-                        alt='Desarrollo front-end, sitio web estático Dkassa'
+                        alt='Desarrollo front-end, proyecto Tierra App'
                     />
                 </div>
 
@@ -42,14 +43,11 @@ const PageYalogics = () => {
                     <div>
                         <h2>Descripción General</h2>
                         <p>
-                            <b>Yalogics</b> agencia dedicada al desarrollo de tiendas online para pequeños y grandes negocios.
-                        </p>
-                        <br/>
-                        <p>
-                            Maqueté y diseñé el sitio web en <b>Figma</b> definiendo el estilo y paleta de colores. 
-                            <br/>
-                            <br />
-                            Luego, procedí a desarrollar el sitio con <b>React Js</b>, para actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien. Se estableció una navegación a través de <b>React Router</b> y aplicando estilos mediante el uso de <b>SASS</b> y <b>Bootstrap</b> para asegurar una interfaz visualmente atractiva y funcional.
+                            Proyecto sencillo realizado en curso de <b>React</b> para temas puntuales (principios de React).
+
+                            <br /><br />
+
+                            Funcionalidad sencilla de agregar al carrito con manejo de <b>Redux</b>. Rutas con <b>React Router</b>. Uso de <b>useState</b>.
                         </p>
                     </div>
                 </div>
@@ -69,11 +67,11 @@ const PageYalogics = () => {
                 <div className={style.Cronogram}>
                     <h3>Cronograma</h3>
                     <p>
-                        1 mes, <span>Lanzado en 2023</span>
+                        <span>Realizado en 2022</span>
                     </p>
 
-                    <a href="https://yalogics.com/" target='_blank'>
-                        Visitar sitio 
+                    <a href="https://carrito-de-compras-felipe-aguilar.netlify.app" target='_blank'>
+                        Visitar proyecto 
                         <BsBoxArrowUpRight />
                     </a>
                 </div>
@@ -82,4 +80,4 @@ const PageYalogics = () => {
     );
 }
 
-export default PageYalogics;
+export default PageCarrito;

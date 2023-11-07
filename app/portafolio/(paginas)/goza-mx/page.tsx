@@ -4,6 +4,10 @@ import { BsArrowLeftShort, BsBoxArrowUpRight } from 'react-icons/bs';
 import { SiMicrosoftsqlserver, SiMysql, SiPhp, SiWordpress } from "react-icons/si";
 import Image from 'next/image';
 
+export const metadata = {
+    title: 'Felipe Aguilar - Goza Mx',
+    description: 'Goza Mx, desarrollo de ecommerce front-end por Felipe Aguilar',
+};
 
 const PageGozaMx = () => {
 

@@ -3,6 +3,12 @@ import style from './portafolio.module.scss';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import Image from 'next/image';
 
+
+export const metadata = {
+    title: 'Felipe Aguilar - Portafolio',
+    description: 'Mi portafolio como desarrollador front-end',
+};
+
 interface propsProyect {
     name: string,
     subTitle: string,

@@ -4,6 +4,10 @@ import { BsArrowLeftShort, BsBoxArrowUpRight } from 'react-icons/bs';
 import { SiGoogle, SiGoogleanalytics, SiSemrush, SiWordpress } from "react-icons/si";
 import Image from 'next/image';
 
+export const metadata = {
+    title: 'Felipe Aguilar - South Dental',
+    description: 'South Dental, desarrollo de ecommerce front-end por Felipe Aguilar',
+};
 
 const PageSouthDental = () => {
 

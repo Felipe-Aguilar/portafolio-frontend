@@ -1,40 +1,40 @@
 import Link from 'next/link';
-import style from '../portfolio.pages.module.scss';
+import style from '../../../portafolio/(paginas)/portfolio.pages.module.scss';
 import { BsArrowLeftShort, BsBoxArrowUpRight } from 'react-icons/bs';
-import { SiBootstrap, SiReact, SiSass } from "react-icons/si";
+import { SiJavascript, SiReact, SiStyledcomponents } from "react-icons/si";
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'Felipe Aguilar - Yalogics',
-    description: 'Yalogics, desarrollo de ecommerce front-end por Felipe Aguilar',
+    title: 'Felipe Aguilar - Tierra App',
+    description: 'Tierra App, desarrollo de proyecto front-end por Felipe Aguilar',
 };
 
-const PageYalogics = () => {
+const PageTierra = () => {
 
     const technologies = [
+        {"icon": <SiJavascript />},
         {"icon": <SiReact />},
-        {"icon": <SiSass />},
-        {"icon": <SiBootstrap />}
+        {"icon": <SiStyledcomponents />},
     ]
     return ( 
         <div className={style.pagePortfolio}>
             <div className={style.Body}>
 
                 <div className={style.btnReturn}>
-                    <Link href='/portafolio'>
+                    <Link href='/proyectos'>
                         <BsArrowLeftShort />
                         Regresar
                     </Link>
                 </div>
 
                 <div className={style.Title}>
-                    <h1>Yalogics</h1>
-                    <span>Sitio Web</span>
+                    <h1>Tierra App</h1>
+                    <span>Aplicación web</span>
                     <Image 
-                        src={'/imagenes/Yalogics.webp'}
+                        src={'/imagenes/TierraApp.webp'}
                         width={1920}
                         height={1080}
-                        alt='Desarrollo front-end, sitio web estático Dkassa'
+                        alt='Desarrollo front-end, proyecto Tierra App'
                     />
                 </div>
 
@@ -42,14 +42,9 @@ const PageYalogics = () => {
                     <div>
                         <h2>Descripción General</h2>
                         <p>
-                            <b>Yalogics</b> agencia dedicada al desarrollo de tiendas online para pequeños y grandes negocios.
-                        </p>
-                        <br/>
-                        <p>
-                            Maqueté y diseñé el sitio web en <b>Figma</b> definiendo el estilo y paleta de colores. 
-                            <br/>
-                            <br />
-                            Luego, procedí a desarrollar el sitio con <b>React Js</b>, para actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien. Se estableció una navegación a través de <b>React Router</b> y aplicando estilos mediante el uso de <b>SASS</b> y <b>Bootstrap</b> para asegurar una interfaz visualmente atractiva y funcional.
+                            Proyecto personal con el único fin de poner en práctica algunos conceptos de <b>React</b>.
+                            <br /><br />
+                            Uso de <b>React Router</b> y <b>Styled Components</b>. Uso de animaciones con <b>Framer Motion</b>.
                         </p>
                     </div>
                 </div>
@@ -69,11 +64,11 @@ const PageYalogics = () => {
                 <div className={style.Cronogram}>
                     <h3>Cronograma</h3>
                     <p>
-                        1 mes, <span>Lanzado en 2023</span>
+                        <span>Realizado en 2022</span>
                     </p>
 
-                    <a href="https://yalogics.com/" target='_blank'>
-                        Visitar sitio 
+                    <a href="https://tierra-app-felipe-aguilar.netlify.app/sistemaSolar" target='_blank'>
+                        Visitar proyecto 
                         <BsBoxArrowUpRight />
                     </a>
                 </div>
@@ -82,4 +77,4 @@ const PageYalogics = () => {
     );
 }
 
-export default PageYalogics;
+export default PageTierra;
