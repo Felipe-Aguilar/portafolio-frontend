@@ -20,6 +20,10 @@
         padding: 0 10%;
         gap: 50px;
 
+        @media (width <= 657px) {
+            padding: 0  0.5%;
+        }
+
         svg{
             font-size: 4rem;
             color: rgba(242, 242, 242, 0.6);

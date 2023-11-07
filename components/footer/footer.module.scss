@@ -5,4 +5,26 @@
 
     font-size: 0.9rem;
     
+    .iconsSocial{
+        display: none;
+    }
+
+    @media (width <= 512px) {
+        padding: 30px 15px;
+        font-size: 0.8rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .iconsSocial{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
 }

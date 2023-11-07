@@ -31,13 +31,20 @@ export default function Home() {
                 alt='Fotografía con de mi recibimiento de título'
               />
             </div>
-            <p>
+            <p className={styles.firstText}>
               Disfruto mucho de todo aquello que me apasiona, como lo es la música y mi trabajo como desarrollador. <br /><br /> Logrando desempeñarme de forma increíble disfrutando mi vida laboral y personal que se complementan cada una de ellas.
+            </p>
+            <p className={styles.secondText}>
+              <b>Ingeniero en Informática</b> graduado de la <b>Universidad Politécnica del Valle de México</b> con más de 2 años de experiencia especializado en desarrollo Front-End. 
+              <br /> <br/>
+              Cuento con experiencia en el desarrollo de todo tipo de proyectos web, desde aplicaciones simples hasta complejos sitios web de comercio electrónico.
+              <br /><br />
+              También tengo experiencia en el posicionamiento SEO de sitios web, lo que me permite que también sean bien posicionados en los motores de búsqueda.
             </p>
           </div>
 
           <div>
-            <p>
+            <p className={styles.firstText}>
               <b>Ingeniero en Informática</b> graduado de la <b>Universidad Politécnica del Valle de México</b> con más de 2 años de experiencia especializado en desarrollo Front-End. 
               <br /> <br/>
               Cuento con experiencia en el desarrollo de todo tipo de proyectos web, desde aplicaciones simples hasta complejos sitios web de comercio electrónico.
@@ -53,6 +60,10 @@ export default function Home() {
                 alt='Fotografía con de mi en un festival'
               />
             </div>
+            
+            <p className={styles.secondText}>
+              Disfruto mucho de todo aquello que me apasiona, como lo es la música y mi trabajo como desarrollador. <br /><br /> Logrando desempeñarme de forma increíble disfrutando mi vida laboral y personal que se complementan cada una de ellas.
+            </p>
           </div>
         </div>
 
