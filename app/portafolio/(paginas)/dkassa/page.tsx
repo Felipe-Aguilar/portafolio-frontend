@@ -48,7 +48,7 @@ const PageDkassa = () => {
                         <p>
                             Retomé este proyecto realizado con un <b>(CMS)</b>, <b>optimizando</b> y <b>mejorando</b> el diseño de este Ecommerce, como también su <b>rendimiento</b>, optimizando el uso de plugins necesarios. 
                             <br /><br />
-                            Al ser una empresa que vende productos "premium" fue necesario realizar una correcta optimización en imágenes, ya que la calidad de sus productos es alta y era necesario una buena calidad de imagen en su catálogo de productos. Definir y <b>programar</b> toda la parte de <b>descuentos</b> por temporada y <b>cupones</b>.
+                            Al ser una empresa que vende productos premium fue necesario realizar una correcta optimización en imágenes, ya que la calidad de sus productos es alta y era necesario una buena calidad de imagen en su catálogo de productos. Definir y <b>programar</b> toda la parte de <b>descuentos</b> por temporada y <b>cupones</b>.
                             <br /><br />
                             Se implementó <b>pasarela de pagos</b> con <b>OpenPay</b>
                         </p>
