@@ -32,7 +32,7 @@ const Header = () => {
                 <a href="https://github.com/Felipe-Aguilar" target='_blank'>
                     <BsGithub />
                 </a>
-                <a href="" target='_blank'>
+                <a href="https://drive.google.com/file/d/1XwSNHqkgDirHV9H0ZzAvpUWr3W316HL1/view?usp=sharing" target='_blank'>
                     <BsFileEarmarkPersonFill />
                 </a>
             </div>
