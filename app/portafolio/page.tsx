@@ -19,6 +19,7 @@ interface propsProyect {
 const PagePortafolio = () => {
 
     const Proyectos: propsProyect[] = [
+        {name: 'Tarjet', subTitle: 'Desarrollo de aplicación web de tarjetero digital.', link: '/portafolio/tarjet', image: '/imagenes/Tarjet-2.webp'},
         {name: 'Goza Mx', subTitle: 'Desarrollo de Ecommerce para venta de ropa de dama.', link: '/portafolio/goza-mx', image: '/imagenes/Goza.webp'},
         {name: 'Yalogics', subTitle: 'Sitio web estático para empresa dedicada a desarrollos web en general', link: '/portafolio/yalogics', image: '/imagenes/Yalogics.webp'},
         {name: 'Dkassa', subTitle: 'Ecommerce para venta de muebles en Monterrey, México', link: '/portafolio/dkassa', image: '/imagenes/Dkassa.webp'},
