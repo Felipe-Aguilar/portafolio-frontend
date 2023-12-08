@@ -53,7 +53,7 @@ const PageYalogics = () => {
                             Se desarrolló la aplicación web mediante un plan de trabajo extenso a largo plazo, cumpliendo con fases de desarrollo, actualizaciones y mantenimiento profundo de la plataforma. Tarjet todos los derechos reservados ©.
                             <br/>
                             <br />
-                            Desarrollo de aplicación web con consumo de <b>API's REST</b>, actualización de datos, manejo de <b>sesiones</b> y uso de <b>estados globales</b>.
+                            Desarrollo de aplicación web con consumo de <b>APIs REST</b>, actualización de datos, manejo de <b>sesiones</b> y uso de <b>estados globales</b>.
                         </p>
                     </div>
                 </div>
