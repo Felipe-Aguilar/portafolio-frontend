@@ -46,7 +46,7 @@ const PageYalogics = () => {
                     <div>
                         <h2>Descripción General</h2>
                         <p>
-                            <b>Tarjet ©</b> plataforma de tarjetas digitales para empresas y/o profesionistas. Conecta con usuarios que estén interesados en tus servicios.
+                            <b>Tarjet &#169</b> plataforma de tarjetas digitales para empresas y/o profesionistas. Conecta con usuarios que estén interesados en tus servicios.
                         </p>
                         <br/>
                         <p>
