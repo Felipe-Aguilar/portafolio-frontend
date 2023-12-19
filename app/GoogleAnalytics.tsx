@@ -1,7 +1,10 @@
+// app/GoogleAnalytics
+
 'use client'
 
-import Script from "next/script";
-import * as gtag from "../gtag";
+import Script from "next/script"
+// import * as gtag from "./gtag.js"
+import * as gtag from '../gtag';
 
 const GoogleAnalytics = () => {
     return (
@@ -15,12 +18,12 @@ const GoogleAnalytics = () => {
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', '${gtag.GA_TRACKING_ID}', {
-                        page_path: window.location.pathname,
-                        });
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', '${gtag.GA_TRACKING_ID}', {
+                      page_path: window.location.pathname,
+                      });
                     `,
                 }}
             />
