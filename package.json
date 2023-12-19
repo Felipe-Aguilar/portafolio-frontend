@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bradgarropy/next-google-analytics": "^1.0.2",
     "framer-motion": "^10.16.4",
     "next": "13.5.6",
     "react": "^18",
