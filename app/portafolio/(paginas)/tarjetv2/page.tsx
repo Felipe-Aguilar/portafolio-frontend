@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import style from '../portfolio.pages.module.scss';
 import { BsArrowLeftShort, BsBoxArrowUpRight } from 'react-icons/bs';
-import { SiBootstrap, SiFramer, SiJavascript, SiPostman, SiReact, SiSass, SiTypescript } from "react-icons/si";
+import { SiBootstrap, SiFramer, SiGoogle, SiNextdotjs, SiPostman, SiReact, SiSass, SiTypescript } from "react-icons/si";
 import Image from 'next/image';
 
 export const metadata = {
@@ -12,11 +12,11 @@ export const metadata = {
 const PageYalogics = () => {
 
     const technologies = [
-        {"icon": <SiJavascript />},
         {"icon": <SiTypescript />},
         {"icon": <SiReact />},
+        {"icon": <SiNextdotjs />},
+        {"icon": <SiGoogle />},
         {"icon": <SiSass />},
-        {"icon": <SiBootstrap />},
         {"icon": <SiFramer />},
         {"icon": <SiPostman />},
     ]
@@ -32,7 +32,7 @@ const PageYalogics = () => {
                 </div>
 
                 <div className={style.Title}>
-                    <h1>Tarjet</h1>
+                    <h1>Tarjet versión 2</h1>
                     <span>Aplicación Web</span>
                     <Image 
                         src={'/imagenes/Tarjet.webp'}
@@ -50,10 +50,7 @@ const PageYalogics = () => {
                         </p>
                         <br/>
                         <p>
-                            Se desarrolló la aplicación web mediante un plan de trabajo extenso a largo plazo, cumpliendo con fases de desarrollo, actualizaciones y mantenimiento profundo de la plataforma. Tarjet todos los derechos reservados ©.
-                            <br/>
-                            <br />
-                            Desarrollo de aplicación web con consumo de <b>APIs REST</b>, actualización de datos, manejo de <b>sesiones</b> y uso de <b>estados globales</b>.
+                            Actualización de plataforma a <b>Next Js 14</b>, nuevo sistema de rutas con <b>App Router</b>, manejo de <b>CSR</b> y <b>SSR</b>, menejo de sesiones con <b>Next Auth</b> y uso de herramientas de <b>Google Cloud Platform</b>.
                         </p>
                     </div>
                 </div>
@@ -73,11 +70,11 @@ const PageYalogics = () => {
                 <div className={style.Cronogram}>
                     <h3>Cronograma</h3>
                     <p>
-                        10 meses, <span>Lanzado en 2023</span>
+                        10 meses, <span>Lanzado en 2023</span> - Actualización en 2024
                     </p>
 
                     <div className='d-flex'>
-                        <a href="https://tarjet.site" target='_blank'>
+                        <a href="https://tarjet.site/" target='_blank'>
                             Visitar sitio 
                             <BsBoxArrowUpRight />
                         </a>

@@ -2,7 +2,7 @@
 
 import styles from './skills.module.scss';
 import 'react-tooltip/dist/react-tooltip.css';
-import { SiBootstrap, SiCss3, SiFigma, SiFirebase, SiGit, SiHtml5, SiJavascript, SiMicrosoftsqlserver, SiMysql, SiNextdotjs, SiReact, SiSass, SiTypescript } from 'react-icons/si';
+import { SiBootstrap, SiCss3, SiFigma, SiGit, SiGoogle, SiHtml5, SiJavascript, SiMicrosoftsqlserver, SiMysql, SiNextdotjs, SiPostgresql, SiReact, SiSass, SiTypescript } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { Tooltip } from 'react-tooltip';
 
@@ -13,7 +13,7 @@ const Skills = () => {
         {name: 'TypeScript', icon: <SiTypescript />},
         {name: 'React', icon: <SiReact />},
         {name: 'NextJs', icon: <SiNextdotjs />},
-        {name: 'Firebase', icon: <SiFirebase />},
+        {name: 'PostgresSQL', icon: <SiPostgresql />},
         {name: 'MySQL', icon: <SiMysql />},
         {name: 'SQL Server', icon: <SiMicrosoftsqlserver />},
         {name: 'HTML5', icon: <SiHtml5 />},
@@ -22,6 +22,7 @@ const Skills = () => {
         {name: 'Bootstrap', icon: <SiBootstrap />},
         {name: 'Figma', icon: <SiFigma />},
         {name: 'Git', icon: <SiGit />},
+        {name: 'Google Cloud Platform', icon: <SiGoogle />},
     ]
 
     const propsAnimation = {

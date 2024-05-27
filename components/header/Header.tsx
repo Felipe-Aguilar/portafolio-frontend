@@ -8,7 +8,7 @@ const Header = () => {
 
             <div className={style.Logo}>
                 <h2>Felipe Aguilar</h2>
-                <span>Fron-End Developer</span>
+                <span>Front-End Developer</span>
             </div>
 
             <div className={style.Navigation}>
@@ -32,7 +32,7 @@ const Header = () => {
                 <a href="https://github.com/Felipe-Aguilar" target='_blank'>
                     <BsGithub />
                 </a>
-                <a href="https://drive.google.com/file/d/1XwSNHqkgDirHV9H0ZzAvpUWr3W316HL1/view?usp=sharing" target='_blank'>
+                <a href="https://drive.google.com/file/d/1xUeeZ1kqYH6imGHiiWOBZVTwg6KiBC0w/view?usp=sharing" target='_blank'>
                     <BsFileEarmarkPersonFill />
                 </a>
             </div>
